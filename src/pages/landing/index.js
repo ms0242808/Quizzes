@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 // import { Camera } from 'lucide-react';
-import { Bolt } from '../../components/icons/index';
+// import { Bolt } from '../../components/icons/index';
 
 const Landing = () => {
   const navigate = useNavigate();
@@ -33,7 +33,7 @@ const Landing = () => {
       </div>
       {/* Camera icon */}
       <div className='absolute top-4 right-4 text-white'>
-        <Bolt />
+        // <Bolt />
       </div>
     </div>
   );
