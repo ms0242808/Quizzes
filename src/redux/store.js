@@ -3,6 +3,6 @@ import quizReducer from './quizSlice';
 
 export const store = configureStore({
 	reducer: {
-		navbar: quizReducer
+		userVal: quizReducer
 	}
 });

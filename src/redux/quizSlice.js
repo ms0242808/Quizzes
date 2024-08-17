@@ -1,20 +1,27 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-	title: 'Pick a date'
+	username: '',
+	answers: []
 };
 
 export const quizlice = createSlice({
 	name: 'quiz',
 	initialState,
 	reducers: {
-		updateTitle: (state, action) => {
-			state.title = action.payload;
+		updateuserName: (state, action) => {
+			state.username = action.payload;
+		},
+		updateAnswers: (state, action) => {
+			state.answers = action.payload;
+		},
+		resetAll: (state, action) => {
+			state = initialState;
 		}
 	}
 });
 
 // Action creators are generated for each case reducer function
-export const { updateTitle } = quizlice.actions;
+export const { updateuserName, updateAnswers, resetAll } = quizlice.actions;
 
 export default quizlice.reducer;
