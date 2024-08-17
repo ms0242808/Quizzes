@@ -33,7 +33,7 @@ const Intro = () => {
 					className='bg-white text-purple-900 rounded-full p-4 flex items-center justify-center mx-auto hover:bg-gray-200 transition-colors'
 					onClick={handleQuizClick}
 				>
-					<span className='text-xl font-bold text-sky-950'>Let's siwm</span>
+					<span className='text-xl font-bold text-sky-950'>Let's swim</span>
 				</button>
 			</div>
 			{/* <div className='absolute bottom-0 w-full flex justify-center'>
