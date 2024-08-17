@@ -1,0 +1,129 @@
+{
+	"title": "Which Fish Are You?",
+	"instructions": "Answer the following 5 questions to discover which type of fish you are most like!",
+	"questions": [
+		{
+			"question": "How do you prefer to spend your free time?",
+			"options": {
+				"A": "Exploring new places and trying new things",
+				"B": "Relaxing and enjoying a calm environment",
+				"C": "Socializing and being around friends",
+				"D": "Taking on challenges and solving problems"
+			}
+		},
+		{
+			"question": "What’s your ideal vacation?",
+			"options": {
+				"A": "An adventurous trip to a remote destination",
+				"B": "A serene getaway to a quiet beach or lake",
+				"C": "A lively city trip with lots of social events",
+				"D": "An action-packed adventure with lots of activities"
+			}
+		},
+		{
+			"question": "How do you handle stressful situations?",
+			"options": {
+				"A": "Dive right in and tackle the problem head-on",
+				"B": "Take a step back and seek a peaceful solution",
+				"C": "Reach out to friends and family for support",
+				"D": "Analyze the situation carefully and devise a strategy"
+			}
+		},
+		{
+			"question": "Which of these hobbies appeals to you the most?",
+			"options": {
+				"A": "Hiking or exploring new environments",
+				"B": "Reading a book or meditating",
+				"C": "Attending social events or parties",
+				"D": "Playing strategy games or engaging in competitive activities"
+			}
+		},
+		{
+			"question": "What is your approach to work or projects?",
+			"options": {
+				"A": "Jump in with enthusiasm and a sense of adventure",
+				"B": "Work steadily and enjoy a balanced pace",
+				"C": "Collaborate and engage with others for the best results",
+				"D": "Plan meticulously and focus on achieving goals"
+			}
+		}
+	],
+	"results": {
+		"A": {
+			"name": "Salmon",
+			"index": 0,
+			"answer": "A",
+			"criteria": "4 or more A's",
+			"tags": ["Adventurous", "Driven", "Bold", "Challenging", "Leader", "Determined", "Innovative", "Resilient"],
+			"radarData": [
+				{ "subject": "Vitality", "Score": 9, "fullMark": 10 },
+				{ "subject": "Optimism", "Score": 8, "fullMark": 10 },
+				{ "subject": "Creativity", "Score": 7, "fullMark": 10 },
+				{ "subject": "Empathy", "Score": 6, "fullMark": 10 },
+				{ "subject": "Leadership", "Score": 8, "fullMark": 10 }
+			],
+			"finalScore": "76%",
+			"mutual_influence": ["Tranquil", "Introverted", "Calm", "Reflective"],
+			"bgColor": "#FA8072",
+			"tagColor": "#E57373",
+			"description": "Like a salmon, you are adventurous and driven. You thrive in new and challenging environments, often taking the lead and making bold moves. You're not afraid to go against the current if it means reaching your goals."
+		},
+		"B": {
+			"name": "Goldfish",
+			"index": 1,
+			"answer": "B",
+			"criteria": "4 or more B's",
+			"tags": ["Tranquil", "Serene", "Reflective", "Calm", "Grounded", "Peaceful", "Content", "Simple"],
+			"radarData": [
+				{ "subject": "Vitality", "Score": 5, "fullMark": 10 },
+				{ "subject": "Optimism", "Score": 8, "fullMark": 10 },
+				{ "subject": "Creativity", "Score": 6, "fullMark": 10 },
+				{ "subject": "Empathy", "Score": 8, "fullMark": 10 },
+				{ "subject": "Leadership", "Score": 4, "fullMark": 10 }
+			],
+			"finalScore": "62%",
+			"mutual_influence": ["Energetic", "Determined", "Strategic", "Assertive"],
+			"bgColor": "#FFA500",
+			"tagColor": "#FFB300",
+			"description": "As a goldfish, you value tranquility and enjoy the simple pleasures of life. You prefer calm and serene environments where you can reflect and recharge. You are known for your peaceful nature and ability to stay grounded."
+		},
+		"C": {
+			"name": "Clownfish",
+			"index": 2,
+			"answer": "C",
+			"criteria": "4 or more C's",
+			"tags": ["Social", "Lively", "Friendly", "Approachable", "Collaborative", "Vibrant", "Outgoing", "Popular"],
+			"radarData": [
+				{ "subject": "Vitality", "Score": 8, "fullMark": 10 },
+				{ "subject": "Optimism", "Score": 9, "fullMark": 10 },
+				{ "subject": "Creativity", "Score": 7, "fullMark": 10 },
+				{ "subject": "Empathy", "Score": 7, "fullMark": 10 },
+				{ "subject": "Leadership", "Score": 6, "fullMark": 10 }
+			],
+			"finalScore": "74%",
+			"mutual_influence": ["Cautious", "Calm", "Introverted", "Spontaneous"],
+			"bgColor": "#FF4500",
+			"tagColor": "#FF9800",
+			"description": "You share many traits with the clownfish, known for being social and lively. You enjoy the company of others and thrive in collaborative and vibrant settings. Your friendly and approachable demeanor makes you a favorite among friends."
+		},
+		"D": {
+			"name": "Shark",
+			"index": 3,
+			"answer": "D",
+			"criteria": "4 or more D's",
+			"tags": ["Focused", "Determined", "Strategic", "Calculated", "Driven", "Persistent", "Ambitious", "Formidable"],
+			"radarData": [
+				{ "subject": "Vitality", "Score": 9, "fullMark": 10 },
+				{ "subject": "Optimism", "Score": 7, "fullMark": 10 },
+				{ "subject": "Creativity", "Score": 8, "fullMark": 10 },
+				{ "subject": "Empathy", "Score": 4, "fullMark": 10 },
+				{ "subject": "Leadership", "Score": 10, "fullMark": 10 }
+			],
+			"finalScore": "76%",
+			"mutual_influence": ["Passive", "Empathetic", "Cautious", "Tranquil"],
+			"bgColor": "#4B4B4B",
+			"tagColor": "#4682B4",
+			"description": "Like a shark, you are focused, determined, and strategic. You approach challenges with a calculated mindset and are always looking for ways to improve and achieve your objectives. Your drive and persistence make you a formidable force in any endeavor."
+		}
+	}
+}
