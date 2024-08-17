@@ -6,12 +6,12 @@ import quizzesImg from '../../assests/images/quizzes.jpg';
 
 const MemoryBubble = ({ color, option, text, handleClick }) => (
 	<div
-		className={`w-32 h-32 rounded-full flex items-center justify-center p-4 text-center text-sm font-bold shadow-lg ${color} transition-transform hover:scale-105 cursor-pointer`}
+		className={`w-36 h-36 rounded-full flex items-center justify-center p-4 text-center text-sm font-bold shadow-lg ${color} transition-transform hover:scale-105 cursor-pointer`}
 		onClick={handleClick}
 	>
 		<div>
 			<p>{option}</p>
-			{text}
+			<p>{text}</p>
 		</div>
 	</div>
 );
@@ -55,7 +55,7 @@ const Quiz = ({ questions }) => {
 				))}
 			</div>
 
-			<div className='w-full max-w-md relative'>
+			{/* <div className='w-full max-w-md relative'>
 				<input
 					type='range'
 					min='0'
@@ -64,7 +64,7 @@ const Quiz = ({ questions }) => {
 					// onChange={(e) => setSliderValue(e.target.value)}
 					className='absolute bottom-0 left-0 w-full'
 				/>
-			</div>
+			</div> */}
 		</div>
 	);
 };
