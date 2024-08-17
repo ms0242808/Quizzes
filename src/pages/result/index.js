@@ -5,12 +5,14 @@ import salomnImg from '../../assests/images/salmon.jpeg';
 import goldfishImg from '../../assests/images/Goldfish.jpeg';
 import clownfishImg from '../../assests/images/Clownfish.jpg';
 import sharkImg from '../../assests/images/Shark.jpeg';
+import { ResultIcon1, ResultIcon2, ResultIcon3, ResultIcon4 } from '../../components/icons';
 
 const Result = ({ result }) => {
 	const { username, answers } = useSelector((state) => state.userVal);
 	const [outcome, updateOutcome] = useState([]);
 	const [loading, updateLoading] = useState(true);
 	const resutImg = [salomnImg, goldfishImg, clownfishImg, sharkImg];
+	const resultIcon = [<ResultIcon1 />, <ResultIcon2 />, <ResultIcon3 />, <ResultIcon4 />];
 
 	const findResult = () => {
 		const frequency = {};
@@ -36,7 +38,10 @@ const Result = ({ result }) => {
 	});
 
 	return loading ? null : (
-		<div className='w-full min-h-screen bg-gradient-to-b from-yellow-300 to-yellow-100 p-4 flex flex-col items-center'>
+		<div
+			style={{ background: `linear-gradient(to bottom, ${outcome.bgColor}, #FFF)` }}
+			className={`w-full min-h-screen bg-gradient-to-b  p-4 flex flex-col items-center`}
+		>
 			<div className='max-w-md w-full bg-white rounded-lg shadow-lg p-6'>
 				<h1 className='text-3xl font-bold text-center mb-4'>{username}'s emotional character</h1>
 				<h2 className='text-5xl font-bold text-center mb-6' style={{ color: outcome.bgColor }}>
@@ -86,10 +91,10 @@ const Result = ({ result }) => {
 
 				<div>
 					<h3 className='text-lg font-bold mb-2'>Mutual Influence</h3>
-					<div className='flex justify-around'>
+					<div className='flex justify-around items-center'>
 						{outcome.mutual_influence.map((emotion, index) => (
-							<div key={index} className='text-center'>
-								<div className='w-12 h-12 rounded-full bg-gray-300 mb-1'></div>
+							<div key={index} className='text-center flex flex-col items-center'>
+								<div className='w-12 h-12 rounded-full bg-gray-300 mb-1'>{resultIcon[index]}</div>
 								<div className='text-sm'>{emotion}</div>
 							</div>
 						))}
