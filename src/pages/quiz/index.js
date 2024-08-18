@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
-import { updateAnswers } from '../../redux/quizSlice';
+import { updateUseranswers } from '../../util';
 import quizzesImg from '../../assests/images/quizzes.jpg';
 
 const MemoryBubble = ({ color, option, text, handleClick }) => (
@@ -18,7 +17,6 @@ const MemoryBubble = ({ color, option, text, handleClick }) => (
 
 const Quiz = ({ questions }) => {
 	const navigate = useNavigate();
-	const dispatch = useDispatch();
 	const pagesLength = questions.length - 1;
 	const colors = [
 		'bg-yellow-300 text-yellow-800',
@@ -33,7 +31,7 @@ const Quiz = ({ questions }) => {
 		setAnswers((prev) => [...prev, val]);
 
 		if (pages === pagesLength) {
-			dispatch(updateAnswers(answers));
+			updateUseranswers(answers);
 			navigate(`/result`);
 		} else {
 			setPages((prev) => prev + 1);

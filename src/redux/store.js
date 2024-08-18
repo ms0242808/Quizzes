@@ -6,3 +6,7 @@ export const store = configureStore({
 		userVal: quizReducer
 	}
 });
+
+export const getState = () => store.getState();
+
+export const dispatch = (action) => store.dispatch(action);
