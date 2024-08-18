@@ -1,10 +1,10 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useSelector } from 'react-redux';
+import { getUsername } from '../../util';
 import introImg from '../../assests/images/intro2.jpg';
 
 const Intro = () => {
-	const userName = useSelector((state) => state.userVal.username);
+	const userName = getUsername();
 	const navigate = useNavigate();
 
 	const handleQuizClick = () => navigate(`/quiz`);

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { useSelector } from 'react-redux';
 import { Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, ResponsiveContainer } from 'recharts';
+import { getUseranswers, getUsername } from '../../util';
 import salomnImg from '../../assests/images/salmon.jpeg';
 import goldfishImg from '../../assests/images/Goldfish.jpeg';
 import clownfishImg from '../../assests/images/Clownfish.jpg';
@@ -8,7 +8,8 @@ import sharkImg from '../../assests/images/Shark.jpeg';
 import { ResultIcon1, ResultIcon2, ResultIcon3, ResultIcon4 } from '../../components/icons';
 
 const Result = ({ result }) => {
-	const { username, answers } = useSelector((state) => state.userVal);
+	const username = getUsername();
+	const answers = getUseranswers();
 	const [outcome, updateOutcome] = useState([]);
 	const [loading, updateLoading] = useState(true);
 	const resutImg = [salomnImg, goldfishImg, clownfishImg, sharkImg];

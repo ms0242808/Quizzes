@@ -1,16 +1,14 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
-import { updateuserName } from '../../redux/quizSlice';
+import { updateUsername } from '../../util';
 import introImg from '../../assests/images/intro.jpg';
 
 const Question = () => {
-	const [name, setName] = useState('');
 	const navigate = useNavigate();
-	const dispatch = useDispatch();
+	const [name, setName] = useState('');
 
 	const handleNextClick = () => {
-		dispatch(updateuserName(name));
+		updateUsername(name);
 		navigate(`/intro`);
 	};
 
